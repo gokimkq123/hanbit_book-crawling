@@ -4,7 +4,6 @@ from urllib.request import urlopen
 from html import unescape
 
 f = urlopen('http://hanbit.co.kr/store/books/full_book_list.html')
-file = open('dp.html', 'w')
 
 encoding = f.info().get_content_charset(failobj="utf-8")
 # HTTP 헤더를 기반으로 인코딩 방식 추출(값이 없다면 utf-8을 기본으로 사용)
